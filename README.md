@@ -62,10 +62,10 @@
         1. keepGoing = false;
     1. else if (correct.toUpperCase().equals("L"))
         1. guess += guessChange;
-        1. guessChange /= 2;
+        1. guessChange = (int)Math.floor(guessChange / 2.0);
     1. else if (correct.toUpperCase().equals("H"))
         1. guess -= guessChange;
-        1. guessChange /= 2;
+        1. guessChange = (int)Math.floor(guessChange / 2.0);
     1. else
         1. print "invalid input, please try again";
 1. end while
